@@ -32,3 +32,4 @@ use the editor.
 ## Project rules
 
 - Dashboard data and calculations live in `src/lib/porsche/` as pure functions (with tests); UI pieces in `src/components/dashboard/` only render them — keeps the numbers testable without a browser.
+- GitHub Pages: `.github/workflows/pages.yml` builds with `PAGES_BASE` set, which makes `vite.config.ts` skip nitro and prerender to static HTML under that sub-path; keep links/assets relative to `import.meta.env.BASE_URL` — Pages serves only static files under /<repo>/.
