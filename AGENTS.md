@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Dashboard data and calculations live in `src/lib/porsche/` as pure functions (with tests); UI pieces in `src/components/dashboard/` only render them — keeps the numbers testable without a browser.
