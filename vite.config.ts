@@ -11,7 +11,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 // GitHub Pages only serves static files: when PAGES_BASE is set (by .github/workflows/pages.yml)
 // we skip the server target and prerender every page to plain HTML under that sub-path.
-const pagesBase = process.env.PAGES_BASE;
+const pagesBase = process.env["PAGES_BASE"];
 
 export default defineConfig(
   pagesBase
